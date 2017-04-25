@@ -1,7 +1,7 @@
 # Homework
 Homework Metodologie di Programmazione
 
-Include gli homework e le prove scritte del corso di metodologie di programmazione 2017 con il professor Cenciarelli
+Repo degli homework e prove scritte del corso di Metodologie di Programmazione a.a 2016-17 (canale A-L) Cenciarelli
 
 LINK HOMEWORK --> https://elearning2.uniroma1.it/course/view.php?id=5090&section=2
 
