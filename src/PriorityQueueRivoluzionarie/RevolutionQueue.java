@@ -1,19 +1,18 @@
 package PriorityQueueRivoluzionarie;
 
 /**
- * Created by nicolo on 21/04/17.
+ * Una priority queue rivoluzionaria (PQR) è una priority queue, con priorità espressa da numeri interi,
+ * dotata di un metodo revolution() che inverte l'ordine di priorità. Ad esempio, supponendo che una PQR q
+ * si trovi in uno stato in cui elementi con alta priorità vengono estratti prima di quelli con priorità bassa,
+ * dopo l'invocazione di q.revolution(), verranno estratti per primi gli elementi con priorità minore;
+ * una successiva invocazione del metodo inverte nuovamente l'ordine e così via. Elementi con uguale priorità
+ * vengono comunque estratti in ordine di arrivo. La tradizionale implementazione di priority queue attraverso
+ * un heap (dunque, usando la classe java.util.PriorityQueue) non è adatta per le PQR, dato che ogni rivoluzione
+ * richiederebbe una totale riorganizzazione dello heap per invertire l'ordine di priorità. Alternativamente,
+ * le PQR potrebbero essere implementate usando java.util.Hashtable. L'implementazione che proponiamo è tutta
+ * fatta in casa, a partire da una semplice implementazione del tipo di dato astratto delle code.
  */
 public class RevolutionQueue extends Coda <CustomerQueue> {
-    /*
-    Una priority queue rivoluzionaria (PQR) è una priority queue, con priorità espressa da numeri interi, dotata di un metodo revolution()
-    che inverte l'ordine di priorità. Ad esempio, supponendo che una PQR q si trovi in uno stato in cui elementi con alta priorità vengono estratti
-    prima di quelli con priorità bassa, dopo l'invocazione di q.revolution(), verranno estratti per primi gli elementi con priorità minore;
-    una successiva invocazione del metodo inverte nuovamente l'ordine e così via. Elementi con uguale priorità vengono comunque estratti in ordine
-    di arrivo. La tradizionale implementazione di priority queue attraverso un heap (dunque, usando la classe java.util.PriorityQueue) non è adatta
-    per le PQR, dato che ogni rivoluzione richiederebbe una totale riorganizzazione dello heap per invertire l'ordine di priorità.
-    Alternativamente, le PQR potrebbero essere implementate usando java.util.Hashtable. L'implementazione che proponiamo è tutta fatta in casa, a
-    partire da una semplice implementazione del tipo di dato astratto delle code.
-     */
 
     private int state = 1;
     //  1: si estrae dalla priorita' piu' grande;
